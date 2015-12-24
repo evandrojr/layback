@@ -6,5 +6,5 @@ gemspec
 group :development, :test do
   gem "rake"
   gem "rspec"
-  gem 'jazz_fingers'
+ # gem 'jazz_fingers'
 end
