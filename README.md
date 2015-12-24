@@ -58,7 +58,6 @@ Example
 
     $ lang4subs "folder-with-movies" spa por
 
-
 Bug reports and pull requests are welcome on GitHub at https://github.com/evandrojr/layback. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
