@@ -34,6 +34,10 @@ class Os
     end
 
     def download_subs(file)
+      if File.basename(file) =~ /^sample\.(avi|mp4|mkv)/i
+        Sl.info("Not looking for subtitles for #{file}")
+        return
+      end
       delete_video_default_subtitle(file)
   		Settings.langs.each do |lang|
   			Sl.info "Language: #{lang}"
@@ -46,6 +50,7 @@ class Os
 
     # Shell execute
     def se(command)
+        Sl.debug command
   			o = `#{command}`
   			r = $?.to_i
   			Sl.debug "#{o} #{r}"
