@@ -7,7 +7,7 @@ When a movie finishes downloading `Layback` will search and download its subtitl
 
 ## Installation
 
-I don't know the reason for it, but installing the gem using sudo it not working. So I recommend you install RVM or rbenv in advance and then install layback with a non privileved user like yourself.
+I don't know the reason for it, but installing the gem using sudo it not working. So I recommend you install RVM or rbenv in advance and then install layback with a non privileged user like yourself.
 
 see [RVM installtion](https://rvm.io/rvm/install)
 
