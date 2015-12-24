@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
-gem "file-monitor", "~> 0.1"
-gem "awesome_print", "~> 1.6"
-gem "logging", "~> 2.0"
-gem "rake"
-gem "rspec"
-gem "opensubtitles"
+
 #Specify your gem's dependencies in layback.gemspec
+gemspec
+
+group :development, :test do
+  gem "rake"
+  gem "rspec"
+  gem 'jazz_fingers'
+end
