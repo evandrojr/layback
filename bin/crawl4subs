@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'crawler'
+require 'settings'
+
+if ARGV.size == 0
+	Sl.error 'The parent folder that will have the language changed is mandatory'
+  puts ''
+  puts 'Please, try something like: '
+  puts ''
+  puts 'crawl4subs "foldername" eng por '
+  puts ''
+  puts 'for example.'
+  puts ''
+  puts 'Default languages are: eng por spa ger on this sequence of priority'
+  exit 1
+end
+
+Settings.dir = ARGV[0]
+langs = ["eng", "por", "spa", "ger"]
+langs = [] if ARGV.size > 1
+c = 0
+ARGV.each do|lang|
+  langs << lang if c > 0
+  c+=1
+end
+Settings.langs = langs
+Sl.info "The first language found will be set to the subtitle file"
+Sl.info Settings.langs.join(" ")
+
+Layback::Crawler.new.crawl
