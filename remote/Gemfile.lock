@@ -21,6 +21,7 @@ GEM
       pry-coolline (~> 0.2)
       pry-doc (~> 0.6)
       pry-remote (>= 0.1.7)
+    json (1.8.3)
     layback (0.0.3)
       awesome_print (~> 1.6)
       file-monitor (~> 0.1)
@@ -85,6 +86,7 @@ PLATFORMS
 
 DEPENDENCIES
   jazz_fingers
+  json
   layback
   rake
   rspec

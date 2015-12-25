@@ -17,6 +17,7 @@ end
 get '/lang4subs' do
    puts "Hello #{params.inspect}!"
    se("lang4subs ~/Downloads #{params[:lang]}")
+   {result: "Changing language to #{params[:lang]}"}.to_json
 end
 
 get '/restart_minidlna' do
