@@ -41,7 +41,7 @@ class Os
       delete_video_default_subtitle(file)
   		Settings.langs.each do |lang|
   			Sl.info "Language: #{lang}"
-  			se("getsub -s hinp -aLl #{lang} \"#{file}\"")
+  			se("getsub -s hn -aLl #{lang} \"#{file}\"")
         # Will to it just for the 1st time
         make_default_subtitle(file, lang)
   		end
