@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
 require 'rubygems'
 require 'bundler'
+require 'bundler/setup'
+require 'sinatra'
+require 'json'
 
 Bundler.require(:default, :development, :test)
 
@@ -12,7 +15,6 @@ def se(command)
     puts "#{o} #{r}"
     r
 end
-
 
 get '/lang4subs' do
    puts "Hello #{params.inspect}!"
