@@ -20,7 +20,6 @@ Gem::Specification.new do |spec|
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
-
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "bin"
   spec.executables   = ["watch4subs", "crawl4subs", "lang4subs"]
@@ -31,4 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "opensubtitles"
   spec.add_runtime_dependency "awesome_print", "~> 1.6"
   spec.add_runtime_dependency "logging", "~> 2.0"
+  spec.add_runtime_dependency "sinatra"
+  spec.add_runtime_dependency "thin"
+  spec.add_runtime_dependency "json"
 end
