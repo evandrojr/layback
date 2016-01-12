@@ -4,6 +4,6 @@ require 'bundler'
 
 Bundler.require(:default, :development, :test)
 
-system("remote_control_server -o 0.0.0.0 &")
+system(__dir__ + "/layback_remote_control_server -o 0.0.0.0 &")
 system("watch4subs ~/Downloads pob por spa eng bre ger &")
 system("crawl4subs ~/Downloads pob por spa eng bre ger &")

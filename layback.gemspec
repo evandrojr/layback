@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   end
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "bin"
-  spec.executables   = ["watch4subs", "crawl4subs", "lang4subs"]
+  spec.executables   = ["watch4subs", "crawl4subs", "lang4subs", "layback_remote_control_server", "layback_loader"]
   spec.require_paths = ["lib"]
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
@@ -30,7 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "opensubtitles"
   spec.add_runtime_dependency "awesome_print", "~> 1.6"
   spec.add_runtime_dependency "logging", "~> 2.0"
-  spec.add_runtime_dependency "sinatra"
-  spec.add_runtime_dependency "thin"
-  spec.add_runtime_dependency "json"
+  spec.add_runtime_dependency "sinatra", "~> 1.4"
+  spec.add_runtime_dependency "json", "~> 1.8"
 end
