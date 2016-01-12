@@ -1,9 +1,6 @@
 #!/usr/bin/env ruby
-require 'rubygems'
 require 'sinatra'
 require 'json'
-
-Bundler.require(:default, :development, :test)
 
 # Shell execute
 def se(command)
