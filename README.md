@@ -40,13 +40,10 @@ layback remote app: Android remote control.
 
 <center>
 <img  src="https://raw.github.com/evandrojr/layback/master/media/remote_control_screenshot.jpg" height="300" />
-</center>
+</center> otherwise it won't work
 <BR>
 
-Sorry but just for now if you want to use the remote control keep your movies files in ~Downloads
-
-
-In case you are a polyglot you can pass as many languages as you like as parameters. The first language available for the movie will be set as the default language for the movie.
+Sorry but just for now if you want to use the remote control keep your movies files in the directory "~Downloads" otherwise it won't work.
 
 ## Usage
 
@@ -55,6 +52,8 @@ In case you are a polyglot you can pass as many languages as you like as paramet
     $ crawl4subs "folder-with-movies" pob eng por
 
 for example.
+
+In case you are a polyglot you can pass as many languages as you like as parameters. The first language available for the movie will be set as the default language for the movie.
 
 Default languages are: eng por spa ger on this sequence of priority. [Sub language ISO 639-2](https://github.com/byroot/ruby-osdb/blob/master/lib/osdb/language.rb) code like pob (Brazilian Portuguese), fre or eng.
 
