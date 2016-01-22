@@ -6,7 +6,7 @@
 When a movie finishes downloading `Layback` will search and download its subtitles automatically.
 
 <center>
-<img  src="https://raw.github.com/evandrojr/layback/master/media/logo.jpg" height="500" />
+<img  src="https://raw.github.com/evandrojr/layback/master/media/logo.jpg" height="350" />
 </center>
 <BR>
 
