@@ -36,10 +36,10 @@ lang4subs: Change the default language of
 all the movies in a parent folder recursively.
 
 layback remote app: Android remote control.
-[Download at:]( https://github.com/evandrojr/layback/blob/master/Android_installer/layback_app.apk?raw=true =250x)
+[Download at:]( https://github.com/evandrojr/layback/blob/master/Android_installer/layback_app.apk?raw=true)
 
 <center>
-<img  src="https://raw.github.com/evandrojr/layback/master/media/remote_control_screenshot.jpg" height="200" />
+<img  src="https://raw.github.com/evandrojr/layback/master/media/remote_control_screenshot.jpg" height="300" />
 </center>
 <BR>
 
