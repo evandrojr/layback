@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+
 system(__dir__ + "/layback_remote_control_server -o 0.0.0.0 &")
-system("watch4subs ~/Downloads pob por spa eng bre ger &")
-system("crawl4subs ~/Downloads pob por spa eng bre ger &")
+system("watch4subs #{ARGV[0]} pob por spa eng bre ger &")
+system("crawl4subs #{ARGV[0]} pob por spa eng bre ger &")
