@@ -5,7 +5,10 @@
 
 When a movie finishes downloading `Layback` will search and download its subtitles automatically.
 
-![Lay back and relax!](https://raw.github.com/evandrojr/layback/master/media/logo.jpg)
+<center>
+<img  src="https://raw.github.com/evandrojr/layback/master/media/logo.jpg" height="500" />
+</center>
+<BR>
 
 ## Installation
 
@@ -23,22 +26,22 @@ Then install Layback yourself as:
 
 There are 4 tools at the moment:
 
-    crawl4subs: Will download the subtitles of the movies
-    inside a parent folder recursively.
+crawl4subs: Will download the subtitles of the movies
+inside a parent folder recursively.
 
-    watch4subs: Watches a folder for new movies and downloads the subtitles as soon
-    as the movie finishes downloading.
+watch4subs: Watches a folder for new movies and downloads the subtitles as soon
+as the movie finishes downloading.
 
-    lang4subs: Change the default language of
-    all the movies in a parent folder recursively.
+lang4subs: Change the default language of
+all the movies in a parent folder recursively.
 
-    layback remote app: Android remote control.
-    [Download at:]( https://github.com/evandrojr/layback/blob/master/Android_installer/layback_app.apk?raw=true =250x)
+layback remote app: Android remote control.
+[Download at:]( https://github.com/evandrojr/layback/blob/master/Android_installer/layback_app.apk?raw=true =250x)
 
-
-
-
-![Now with remote control!](https://raw.github.com/evandrojr/layback/master/media/remote_control_screenshot.jpg)
+<center>
+<img  src="https://raw.github.com/evandrojr/layback/master/media/remote_control_screenshot.jpg" height="200" />
+</center>
+<BR>
 
 Sorry but just for now if you want to use the remote control keep your movies files in ~Downloads
 
