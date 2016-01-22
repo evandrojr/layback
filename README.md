@@ -40,7 +40,7 @@ layback remote app: Android remote control.
 
 <center>
 <img  src="https://raw.github.com/evandrojr/layback/master/media/remote_control_screenshot.jpg" height="300" />
-</center> otherwise it won't work
+</center>
 <BR>
 
 Sorry but just for now if you want to use the remote control keep your movies files in the directory "~Downloads" otherwise it won't work.
@@ -50,8 +50,6 @@ Sorry but just for now if you want to use the remote control keep your movies fi
 ### Download subtitles in English and Portuguese for all the movies  
 
     $ crawl4subs "folder-with-movies" pob eng por
-
-for example.
 
 In case you are a polyglot you can pass as many languages as you like as parameters. The first language available for the movie will be set as the default language for the movie.
 
