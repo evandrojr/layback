@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'settings'
+
+if ARGV[0] == 'g'
+  if ARGV.size > 1
+    ARGV.delete(ARGV[0])
+
+    settings = Settings.new(ARGV)
+    settings.create_settings
+
+    puts Settings.default_languages
+  else
+    puts 'Please, pass at least one language.'
+  end
+else
+  puts "How to use:"
+  puts " layback g por eng\n"
+end

@@ -13,4 +13,11 @@ describe Settings do
     expect(Settings.langs.size).to eq(2)
   end
 
+  it 'saves default settings' do
+    settings = Settings.new(['por', 'eng'])
+    settings.create_settings
+    expect(Settings.default_languages).to match_array(['por', 'eng'])
+    expect(File.exist? Settings.path).to eq(true)
+  end
+
 end
