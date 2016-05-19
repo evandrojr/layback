@@ -9,27 +9,27 @@ module Layback
 
   class Watcher
 
-  	def watch_dirs
-  		FileMonitor.watch Settings.dir do
+    def watch_dirs
+      FileMonitor.watch Settings.dir do
         dirs {
-  		    disallow /\.git$/
-  		  }
+          disallow /\.git$/
+        }
 
-  		  files {
-  		    disallow /.*/
-  		    allow /\.mkv$|\.mp4$|\.avi$/
-  		  }
-				exec do |events|
-			    events.each do |ev|
-			      file = File.join(ev.watcher.path(), ev.name())
+        files {
+          disallow /.*/
+          allow /\.mkv$|\.mp4$|\.avi$/
+        }
+        exec do |events|
+          events.each do |ev|
+            file = File.join(ev.watcher.path(), ev.name())
             if File.exist?(file)
               Sl.info file
-						  Os.download_subs(file)
+              Os.download_subs(file)
             end
-			    end
-			  end
-  		end
-  	end
+          end
+        end
+      end
+    end
 
   end # class
 end # module
