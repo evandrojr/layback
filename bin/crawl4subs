@@ -19,12 +19,18 @@ end
 
 Settings.dir = ARGV[0]
 langs = ["pob", "eng", "por", "spa", "ger"]
-langs = [] if ARGV.size > 1
+langs = if ARGV.size > 1
+  []
+else
+  Settings.default_languages
+end
+
 c = 0
 ARGV.each do|lang|
   langs << lang if c > 0
   c+=1
 end
+
 Settings.langs = langs
 Sl.info "The first language found will be set to the subtitle file"
 Sl.info Settings.langs.join(" ")
