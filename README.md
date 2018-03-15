@@ -23,6 +23,9 @@ or [rbenv](https://github.com/rbenv/rbenv)
 
 Then install Layback yourself as:
 
+This line is for Debian, Ubuntu and derivates:    
+    $ sudo apt install build-essential
+    
     $ gem install layback
 
 ## Tools
