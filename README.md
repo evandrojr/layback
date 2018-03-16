@@ -56,7 +56,9 @@ Sorry but just for now if you want to use the remote control keep your movies fi
 
 ### Download subtitles in English and Portuguese for all the movies  
 
-    $ crawl4subs "folder-with-movies" pob eng por
+    $ crawl4subs "folder-with-movies/" pob eng por
+    
+Important add a / at the end of the path, otherwise will not work. 
 
 In case you are a polyglot you can pass as many languages as you like as parameters. The first language available for the movie will be set as the default language for the movie.
 
