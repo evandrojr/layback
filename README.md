@@ -1,4 +1,4 @@
-# Layback Subtitles Downloader RubyGem
+# Layback Automatic Subtitles Downloader RubyGem
 
 [![Build Status](https://secure.travis-ci.org/evandrojr/layback.png)](http://travis-ci.org/evandrojr/layback)
 [![Gem Version](https://badge.fury.io/rb/layback.svg)](https://badge.fury.io/rb/layback)
