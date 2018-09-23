@@ -13,7 +13,7 @@ if ARGV.size == 0
   puts ''
   puts 'for example.'
   puts ''
-  puts 'Default languages are: eng por spa ger on this sequence of priority'
+  puts 'Default languages are: pob eng por spa ger on this sequence of priority'
   exit 1
 end
 
